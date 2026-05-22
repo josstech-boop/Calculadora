@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.container{
+    margin: 20rem  auto;
+    max-width: 22%;
+    background-color: rgb(186, 113, 255);
+    height: 40rem;
+}
+
+.container button{
+    margin: 0 0.5rem;
+    height: 6rem;
+    width: 6rem;
+    font-size: large;
+}
+
+.num{
+    background-color: rgb(255, 177, 246);
+}
+
+.signos{
+    background-color: rgb(255, 222, 178);
+}
+
+.input{
+    width: 80%;
+    font-size: 2.8rem;
+    outline: none;
+    margin-right: 0.8rem;
+    background-color: rgb(199, 246, 246);
+    height: 100%;
+}

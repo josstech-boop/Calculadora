@@ -32,6 +32,10 @@ body{
 .signos{
     background-color: rgb(255, 222, 178);
 }
+#resultado{
+    background-color: rgb(255, 222, 178);
+
+}
 
 .input{
     width: 80%;

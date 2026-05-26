@@ -11,8 +11,9 @@ botones.forEach(btn => {
 })
 
 const controlDecimales = (arreglo) => {
-    let cout = 0
+
     for (let i = 0; i < arreglo.length; i++) {
+        let cout = 0
         for (let j = 0; j < arreglo[i].length; j++) {
             if (arreglo[i][j] == '.') {
                 cout++
@@ -45,15 +46,8 @@ const buscarMultiplicacion = (datos) => {
             }
         }
     }
-
     return datos;
 }
-// const operacionDecimales = () =>{
-//     let signos
-
-
-
-// }
 
 const operacion = () => {
     let resultado = 0
@@ -63,9 +57,6 @@ const operacion = () => {
     let datos = []
 
     datos = operacionLarga.trim().split(' ')
-
-    // datos = operacionDecimales(datos)
-
 
     for (let b = 0; b < datos.length; b++) {
         if (datos[b] == "") {
@@ -85,15 +76,26 @@ const operacion = () => {
                     break;
                 case '*-':
                     datos.splice(b, 3, parseFloat(datos[b + 2]) * -1)
-
+                    break;
+                 case '-*':
+                    datos.splice(b-1,3,'*')
                     break;
                 case '*+':
+                    datos.splice(b - 1, 3, '*')
+                    break;
+                case '+*':
                     datos.splice(b - 1, 3, '*')
                     break;
                 case '/+':
                     datos.splice(b - 1, 3, '/')
                     break;
+                case '+/':
+                    datos.splice(b - 1, 3, '/')
+                    break;
                 case '/-':
+                    datos.splice(b, 3, parseFloat(datos[b + 2]) * -1)
+                    break;
+                case '-/':
                     datos.splice(b, 3, parseFloat(datos[b + 2]) * -1)
                     break;
                 default:
@@ -119,7 +121,6 @@ const operacion = () => {
 
     datos = buscarMultiplicacion(datos)
 
-    console.log(datos)
 
     for (let j = 0; j < operadoresTamanio; j++) {
         if (datos.length >= 3) {

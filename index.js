@@ -21,9 +21,9 @@ const controlDecimales = (arreglo) => {
         }
         if (cout > 1) {
             return true
-
         }
     }
+    return false
 }
 
 const buscarMultiplicacion = (datos) => {
@@ -57,6 +57,12 @@ const operacion = () => {
     let datos = []
 
     datos = operacionLarga.trim().split(' ')
+
+        console.log(datos)
+    if(datos.length == 1){
+        return datos
+    }
+
 
     for (let b = 0; b < datos.length; b++) {
         if (datos[b] == "") {
@@ -193,7 +199,7 @@ operador.forEach(operador => {
             else {
                 input.value += event.target.textContent
             }
-        } else if (event.target.textContent == '=') {
+        }else if (event.target.textContent == '=') {
             operacion()
         }
         else {

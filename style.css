@@ -1,43 +1,45 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
 
-body{
-    background-color: rgb(238, 238, 238);
+body {
+    background:  rgb(158, 223, 251);
 }
 
-.container{
-    margin: 20rem  auto;
+.container {
+    margin: 20rem auto;
     max-width: 22%;
     background-color: rgb(186, 113, 255);
     height: 40rem;
 }
 
-.container button{
+.container button {
     margin: 0 0.5rem;
     height: 6rem;
     width: 6rem;
     font-size: large;
 }
 
-.num{
+.num {
     background-color: rgb(255, 177, 246);
 }
 
-.signos{
+.signos {
     background-color: rgb(255, 222, 178);
 }
-#resultado{
+
+#resultado {
     background-color: rgb(255, 222, 178);
 
 }
 
-.input{
+.input {
     width: 80%;
     font-size: 2.8rem;
     outline: none;
